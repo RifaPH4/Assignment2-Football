@@ -39,10 +39,12 @@ body {
     transition: transform 0.5s ease-out;
 }
 /* players style  */
-.player-container{
+.player-container {
     padding: 70px 195px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    ;
 }
 .players{
     display: grid;
@@ -54,7 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 15px;
     width: 300px;
     box-shadow: 0px 0px 40px rgb(0, 0, 0, 0.15);
@@ -75,7 +76,7 @@ body {
 /* bottom part */
 .bottom{ display: flex;
     justify-content: center;
-    background-color: ivory;
+    
     padding: 0px;
    
 }
