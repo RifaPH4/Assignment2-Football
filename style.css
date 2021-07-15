@@ -3,7 +3,9 @@ body {
     Size:64px;
    
    margin:0}
-
+h1{
+    font-size: 50px;
+}
   
 .container{
     display: flex;
@@ -38,7 +40,9 @@ body {
     transform: scale(0.5);
     transition: transform 0.5s ease-out;
 }
-/* players style  */
+/*---------------
+ players style 
+ --------------- */
 .player-container {
     padding: 70px 195px;
     display: flex;
@@ -72,7 +76,7 @@ body {
 }
 
 
-/* bottom part */
+/*------- bottom part -----*/
 .bottom{ display: flex;
     justify-content: center;
     padding: 0px;
@@ -82,25 +86,26 @@ body {
 width: 567px;
 height: 427px;
 }
-/* partners part */
+/*---- partners part------ */
 .partners{
     display: flex;
     justify-content: center;
    width: 96%;
    padding: 5px;
-
-   
 }
-.partner{ display: flex;
-    flex-direction: row;
+.partner{
+    display: flex;
+    flex-direction : row;
     align-items: center;
     background-color: lightcyan;
     margin: 0%;
     width: 100%;
     height: 200px;
-    
 }
-/* footer part */
+   
+
+
+/*------- footer part -----*/
 .footer-container{
     display: flex;
 flex-direction: column;
@@ -116,12 +121,21 @@ padding-bottom: 68px;
     padding:5px;
     
 }
-@media only screen and (min-width:688px) and
- (max-width:992){ .container{
-     width:100%;
- }
- .players {
-     grid-template-columns: repeat(1,1fr);
- }.
+/* ------------- 
+media queries
+------------- */
+@media only screen and (max-width:688px) 
+ {
+
+     .container{
+         width:100%;
+     }
+     .players {
+         grid-template-columns: repeat(1, 1fr);
+         }
+         .bottom .bottom img .partners .footer-container{
+             display: none ;
+         }
     
+    }
 }
